@@ -1,0 +1,21 @@
+﻿<Window x:Class="TorDataMiner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="[TDM] - Version 0.1a - Emulator Nexus" Height="550" Width="1000" Background="Transparent" MinWidth="1000" MinHeight="550" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button Content="Mine Data!" Height="23" HorizontalAlignment="Left" Margin="162,12,0,0" Name="mineBtn" VerticalAlignment="Top" Width="179" Click="mineBtn_Click" />
+        <Button Content="Load Dump" Height="23" HorizontalAlignment="Left" Margin="12,12,0,0" Name="loadDump" VerticalAlignment="Top" Width="144" Click="loadDump_Click" />
+        <ListBox HorizontalAlignment="Left" Margin="12,41,0,44" Name="packetList" VerticalAlignment="Stretch" Width="226" VerticalContentAlignment="Center" FontFamily="Consolas" SelectionMode="Single" ItemsSource="{Binding}" IsHitTestVisible="True" FontSize="13" />
+        <Button Content="Browse..." Height="23" HorizontalAlignment="Right" Margin="0,12,12,0" Name="browseBtn" VerticalAlignment="Top" Width="91" />
+        <TextBox Height="23" HorizontalAlignment="Right" Margin="0,12,109,0" Name="dumpPathBox" VerticalAlignment="Top" Width="460" Text="C:\Nexus\Packet Logs\1.2a\CreateChar-EnterWorld-Chat\sniff_1.2.0_decrypted.dat" />
+        <Rectangle Margin="12,0,12,12" Name="rectangle1" RadiusX="5" RadiusY="5" Stroke="#FF828790" Height="26" VerticalAlignment="Bottom" Fill="White" />
+        <Label Content="Status: Idle" HorizontalAlignment="Left" Margin="22,0,0,12" Name="statusLbl" Width="197" Height="26" VerticalAlignment="Bottom" />
+        <ProgressBar Margin="237,0,47,12" Name="gProgress" Height="26" VerticalAlignment="Bottom" />
+        <Border BorderBrush="#FF828790" BorderThickness="1" Margin="244,41,12,44" Name="border1">
+            <ScrollViewer Height="Auto" Name="consoleScroller" Width="Auto">
+                <TextBlock Height="Auto" Name="consoleBox" Text="" FontFamily="Consolas" Foreground="White" Background="Black" Padding="8" />
+            </ScrollViewer>
+        </Border>
+        <CheckBox Margin="0,0,24,16" Name="debugBox" ToolTip="Enable Debugging (NOTE: It will make things slower)" HorizontalAlignment="Right" Width="13" Height="16" VerticalAlignment="Bottom" />
+    </Grid>
+</Window>

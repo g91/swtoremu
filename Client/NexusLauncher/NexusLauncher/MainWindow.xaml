@@ -1,0 +1,13 @@
+﻿<Window x:Class="NexusLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Emulator Nexus Launcher" Height="290" Width="600" IsEnabled="True" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" xmlns:my="clr-namespace:NexusLauncher.Controls">
+    <Grid>
+        <Rectangle Margin="12,11,12,0" Name="rectangle1" Stroke="#FF828790" RadiusX="5" RadiusY="5" Height="158" VerticalAlignment="Top" Fill="White" />
+        <Rectangle Fill="White" Height="32" Margin="12,175,12,0" Name="rectangle2" RadiusX="5" RadiusY="5" Stroke="#FF828790" VerticalAlignment="Top" Visibility="Visible" />
+        <ProgressBar Height="36" Margin="12,215,12,0" Name="progressBar" VerticalAlignment="Top" IsIndeterminate="False" Visibility="Visible" Opacity="0" />
+        <Label Content="..." Height="28" Margin="12,177,12,0" Name="statusLbl" VerticalAlignment="Top" FontStyle="Normal" HorizontalContentAlignment="Center" Visibility="Visible" />
+        <my:AlignableWrapPanel Height="137" Margin="22,25,22,0" x:Name="gamesPanel" VerticalAlignment="Top" HorizontalContentAlignment="Center" />
+        <my:LoadingAnimation Margin="245,46,245,0" x:Name="gameLoadCtl" VerticalAlignment="Top" />
+    </Grid>
+</Window>

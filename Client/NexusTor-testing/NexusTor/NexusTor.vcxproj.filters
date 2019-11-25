@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="swtor">
+      <UniqueIdentifier>{bc10e67c-9422-4334-96bb-0fef87444c48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Libs">
+      <UniqueIdentifier>{7e97b44e-0782-473f-a324-37ad9518595d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="swtor\Debug">
+      <UniqueIdentifier>{48f828c6-2966-4511-b453-8767ce17b585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="swtor\Keys">
+      <UniqueIdentifier>{7b40477b-35fe-4044-adc8-be5c336c8c90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EA">
+      <UniqueIdentifier>{90fe36b8-6e63-4e78-bf84-62a30f6c9b9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EA\eastl">
+      <UniqueIdentifier>{2b9ccde4-a63f-4231-961d-b2877b97d59a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="D3D9">
+      <UniqueIdentifier>{c18b0380-1f38-4e1d-9686-9d6071f2a9e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{24d13d3c-21ed-4489-b16f-088ab0f939ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Menu">
+      <UniqueIdentifier>{dc42e5ec-78af-4857-843b-7e1b12c868b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Renders">
+      <UniqueIdentifier>{c9af2ba6-c11b-4f44-a526-697557feef48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\tools">
+      <UniqueIdentifier>{8b5ada70-4930-4020-854f-a7d518313b26}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MemoryMan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ToR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gom.cpp">
+      <Filter>swtor</Filter>
+    </ClCompile>
+    <ClCompile Include="eastl_allocators.cpp">
+      <Filter>EA\eastl</Filter>
+    </ClCompile>
+    <ClCompile Include="EASTL\src\assert.cpp">
+      <Filter>EA\eastl</Filter>
+    </ClCompile>
+    <ClCompile Include="EASTL\src\fixed_pool.cpp">
+      <Filter>EA\eastl</Filter>
+    </ClCompile>
+    <ClCompile Include="EASTL\src\hashtable.cpp">
+      <Filter>EA\eastl</Filter>
+    </ClCompile>
+    <ClCompile Include="EASTL\src\red_black_tree.cpp">
+      <Filter>EA\eastl</Filter>
+    </ClCompile>
+    <ClCompile Include="EASTL\src\string.cpp">
+      <Filter>EA\eastl</Filter>
+    </ClCompile>
+    <ClCompile Include="EASTL\src\allocator.cpp">
+      <Filter>EA\eastl</Filter>
+    </ClCompile>
+    <ClCompile Include="Form1.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hook.cpp">
+      <Filter>D3D9</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Menu\Textures.cpp">
+      <Filter>Framework\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Menu\SVars.cpp">
+      <Filter>Framework\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuManager.cpp">
+      <Filter>Framework\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Renders\CRenderPrim.cpp">
+      <Filter>Framework\Renders</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Renders\CRegistry.cpp">
+      <Filter>Framework\Renders</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Renders\CRenderFont.cpp">
+      <Filter>Framework\Renders</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\tools\ADE32.cpp">
+      <Filter>Framework\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\tools\CDetour.cpp">
+      <Filter>Framework\tools</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gom.h">
+      <Filter>swtor</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="detours.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Form1.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugTextRenderer.h">
+      <Filter>swtor\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyDump.h">
+      <Filter>swtor\Keys</Filter>
+    </ClInclude>
+    <ClInclude Include="eastl.h">
+      <Filter>EA\eastl</Filter>
+    </ClInclude>
+    <ClInclude Include="hook.h">
+      <Filter>D3D9</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Libs\detours.lib">
+      <Filter>Resource Files\Libs</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
